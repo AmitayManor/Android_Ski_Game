@@ -1,3 +1,7 @@
+
+![image](https://github.com/user-attachments/assets/b9bc4f4b-4150-4fb0-98d4-01b267c3f3ce)
+
+
 # Android_Ski_Game
 Ski Game is an Android mobile application that simulates a skiing experience. Players control a skier character, navigating through trees as obstecles and collecting hot choco as a prize while descending a virtual slope.
 
