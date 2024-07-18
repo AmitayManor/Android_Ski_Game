@@ -76,10 +76,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
     private FusedLocationProviderClient fusedLocationClient;
 
 
-    /**
-     * V
-     * V
-     */
+   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,10 +101,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
     }
 
 
-    /**
-     * V
-     * V
-     */
+  
     private void initializeViews() {
 
         soundPlayer = new SoundPlayer(this);
@@ -139,10 +133,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
 
     }
 
-    /**
-     * V
-     * V
-     */
+    
     private boolean checkLocationPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -154,10 +145,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
         return true;
     }
 
-    /**
-     * V
-     * V
-     */
+    
     private void checkLocationServices() {
         if (!locationHandler.areLocationServicesEnabled(this)) {
             new AlertDialog.Builder(this)
@@ -171,10 +159,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
                     .show();
         }
     }
-    /**
-     * V
-     * V
-     */
+    
     @Override
     protected void onResume() {
         super.onResume();
@@ -188,10 +173,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
     }
 
 
-    /**
-     * V
-     * V
-     */
+    
     @Override
     protected void onPause() {
         super.onPause();
@@ -200,10 +182,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
         locationHandler.stopLocationUpdates();
     }
 
-    /**
-     * V
-     * V
-     */
+ 
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -211,10 +190,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
         locationHandler.stopLocationUpdates();
     }
 
-    /**
-     * V
-     * V
-     */
+    
     private void startGame() {
         Log.d(TAG, "startTimer: Timer Started");
         if (!timerOn) {
@@ -242,10 +218,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
     private void updateScore() {
         totalScoretextView.setText(getString(R.string.totalScoreFmt, gameManager.getTotalScore()));
     }
-    /**
-     * V
-     * V
-     */
+   
     private void pauseGame() {
         isPaused = true;
         Log.d(TAG, "stopTimer: Timer Stopped");
@@ -389,10 +362,7 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
         Log.d(TAG, "New score entry: " + newEntry.toString());
     }
 
-    /**
-     * V
-     * V
-     */
+    
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -406,20 +376,14 @@ public class TiltcontrolActivity extends AppCompatActivity implements SensorEven
         }
     }
 
-    /**
-     *V
-     * V
-     */
+    
     @Override
     public void onLocationUpdated(double latitude, double longitude) {
         this.currentLatitude = latitude;
         this.currentLongitude = longitude;
     }
 
-    /**
-     *V
-     * V
-     */
+   
     @Override
     public void onLocationPermissionRequired() {
         checkLocationPermission();
