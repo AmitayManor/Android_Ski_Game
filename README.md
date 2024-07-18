@@ -28,14 +28,14 @@ Incorporates sound effects for enhanced user experience
 
 # **Main Components**
 
-1. MainActivity: Handles the main game logic with button controls.
-2. TiltcontrolActivity: Implements tilt-based controls using the device's accelerometer.
-3. MenuActivity: Provides options to start the game, view scoreboard, and select game speed.
-4. ScoreboardActivity: Displays high scores and their locations on a map.
-5. GameManager: Manages the core game logic, including object movement and collision detection.
-6. LocationHandler: Handles location services and permissions for scoreboard features.
-7. ScoreBoardManager: Manages the storing and retrieving of high scores.
-8. SoundPlayer: Handles sound effects for the game.
+1. **MainActivity:** Handles the main game logic with button controls.
+2. **TiltcontrolActivity:** Implements tilt-based controls using the device's accelerometer.
+3. **MenuActivity:** Provides options to start the game, view scoreboard, and select game speed.
+4. **ScoreboardActivity:** Displays high scores and their locations on a map.
+5. **GameManager:** Manages the core game logic, including object movement and collision detection.
+6. **LocationHandler:** Handles location services and permissions for scoreboard features.
+7. **ScoreBoardManager:** Manages the storing and retrieving of high scores.
+8. **SoundPlayer:** Handles sound effects for the game.
 
 # **How to Play**
 
