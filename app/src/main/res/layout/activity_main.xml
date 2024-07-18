@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/snow_background">
+
+
+    <LinearLayout
+        android:id="@+id/score_distance_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/roadLayout"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/total_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="24sp"
+            android:background="@color/cyan"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/default_margin"/>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_IMG_hearts"
+        android:layout_width="@dimen/hearts_width"
+        android:layout_height="@dimen/heart_proportions"
+        android:layout_margin="10dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart_love_like_favorite_svgrepo_com" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart_love_like_favorite_svgrepo_com" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart_love_like_favorite_svgrepo_com" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/roadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_below="@id/main_IMG_hearts"
+        android:layout_above="@id/main_BTNS"
+        android:weightSum="5">
+
+
+        <FrameLayout
+            android:id="@+id/first_Lane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <FrameLayout
+            android:id="@+id/second_Lane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <FrameLayout
+            android:id="@+id/thired_Lane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tree"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/tree_svgrepo_com" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fourth_Lane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/skier"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center"
+                app:srcCompat="@drawable/man_skiing_svgrepo_com"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fifth_Lane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/hot_chocolat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/hot_drink_cocoa_svgrepo_com" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_BTNS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginBottom="40dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/left_ARROW_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/left_arrow_svgrepo_com" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/left_ARROW_btn"
+            app:layout_constraintEnd_toStartOf="@id/right_ARROW_btn"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/right_ARROW_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/right_arrow_svgrepo_com" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/cyan_opc">
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/start_over_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Over"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/quit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quit"/>
+
+</LinearLayout>

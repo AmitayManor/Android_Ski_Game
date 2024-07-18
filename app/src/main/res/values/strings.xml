@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SkiGame</string>
+    <string name="totalScoreFmt">Score: %d</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/snow_background">
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Ski Game"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/button_control_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Mode"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/pace_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_slow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slow"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio_fast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast"
+                android:layout_marginLeft="40dp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/start_game_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Start Game"
+            android:textSize="@dimen/game_buttons"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_tilt_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_control_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Start Sensor Game"
+        android:textSize="@dimen/game_buttons"/>
+
+    <Button
+        android:id="@+id/leaderboard_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_tilt_game_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Score Board"
+        android:textSize="@dimen/game_buttons"/>
+
+
+</RelativeLayout>

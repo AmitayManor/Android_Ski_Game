@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin">15dp</dimen>
+    <dimen name="score_text_size">32sp</dimen>
+    <dimen name="bottom_margin_default">32dp</dimen>
+    <dimen name="hearts_width">180dp</dimen>
+    <dimen name="heart_proportions">50dp</dimen>
+    <dimen name="icon_default">60dp</dimen>
+    <dimen name="min_obstacle_spacing">100dp</dimen>
+    <dimen name="skier_size">50dp</dimen>
+    <dimen name="game_buttons">20sp</dimen>
+</resources>
