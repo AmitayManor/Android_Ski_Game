@@ -9,14 +9,14 @@ Button-based controls (MainActivity)
 Tilt-based controls using device accelerometer (TiltcontrolActivity)
 
 
-Obstacle avoidance (trees)
-Reward collection (hot chocolate)
-Score tracking
-Lives system
-Pause menu
-Game over screen
-Scoreboard with location tracking
-Adjustable game speed (slow/fast modes)
+1. Obstacle avoidance (trees)\n
+2. Reward collection (hot chocolate)
+3. Score tracking
+4. Lives system
+5. Pause menu
+6. Game over screen
+7. Scoreboard with location tracking
+8. Adjustable game speed (slow/fast modes)
 
 # **Technical Details**
 
